@@ -1,0 +1,130 @@
+/* SECCIÓN DE CONTACTO */
+.contenedor-contacto{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #E6E6E6;
+}
+
+.contenedor-contacto span{
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 540;
+    color: #5E5E5E;
+}
+
+.contenedor-contacto-contenido{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.contenedor-formulario{
+    width: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-formulario p{
+    margin: 0;
+    padding-top: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-bottom: 2%;
+    font-size: 100%;
+    color: #5E5E5E;
+}
+
+.contenedor-formulario input{
+    width: 400px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #5E5E5E;
+    border: 1.5px solid #00839C;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+}
+
+.contenedor-formulario textarea{
+    width: 400px;
+    height: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #5E5E5E;
+    border: 1.5px solid #00839C;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+}
+
+.contenedor-formulario button{
+    width: 80px;
+    height: 30px;
+    margin-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #5E5E5E;
+    border: 1.5px solid #00839C;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenedor-formulario button:hover{
+    background-color: #1B6282;
+    color: #F0F0F0;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenedor-contacto-informacion{
+    width: 100%;
+    margin-top: 80px;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B6282;
+}
+
+.contenedor-contacto-informacion span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 120%;
+    color: #F0F0F0;
+}
+
+.contenedor-direccion p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    color: #F0F0F0;
+}
+
+.horario-contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.horario-contenido-dias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    grid-column-gap: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    color: #F0F0F0;
+}
+
+.redes-contenido-botones{
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.boton-redes{
+    cursor: pointer;
+}

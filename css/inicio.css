@@ -1,0 +1,36 @@
+.contenedor-inicio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/fondo.png");
+    background-attachment: fixed;
+}
+
+.contenedor-eslogan{
+    width: 50%;
+    padding-top: 7%;
+    margin-bottom: 10%;
+    padding-left: 3%;
+}
+
+.contenedor-eslogan img{
+    width: 50%;
+}
+
+/* Media Query Breakpoints */
+
+/* Pantallas menores a 1000px */
+@media screen and (max-width: 1000px){
+    .contenedor-eslogan img{
+        width: 80%;
+    }
+}
+
+/* Pantallas menores a 660px */
+@media screen and (max-width: 660px){
+    .contenedor-eslogan img{
+        width: 120%;
+    }
+}

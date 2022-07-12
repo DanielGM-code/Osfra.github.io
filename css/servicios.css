@@ -1,0 +1,360 @@
+.contenedor-servicios{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: -4%;
+    background-color: #F0F0F0;
+}
+
+.contenido-servicios {
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-weight: 540;
+    color: #5E5E5E;
+    letter-spacing: 1px;
+}
+
+.contenido-servicios div {
+    height: 65px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: -10px;
+    margin-left: 0;
+    overflow: hidden;
+    position: relative;
+    float: right;
+}
+
+.contenido-servicios div li {
+    height: 45px;
+    display: block;
+    margin-bottom: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 540;
+    letter-spacing: 1px;
+    color: #00839C;
+}
+
+.contenido-servicios ul {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+.div-informacion{
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;   
+    font-weight: 540;
+    letter-spacing: 0.5px;
+    font-size: 120%;
+    color: #5E5E5E;
+}
+
+.lista-servicios li:last-child {
+    color: #00839C;
+    font-weight: 540;
+}
+
+.contenedor-botones-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 8%;
+    grid-column-gap: 4%;
+    margin-top: 2%;
+}
+
+.boton-servicio-tecnologia{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/tecnologia.png");
+}
+
+.boton-servicio-construccion{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/contruccion.png");
+}
+
+.boton-servicio-salud{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/salud.png");
+}
+
+.boton-servicio-otros{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/otros.png");
+}
+
+.texto-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.boton-fondo {
+    width: 20%;
+    position: absolute;
+}
+/* TEXTO ANIMADO */
+.texto-flip {
+    -webkit-animation: texto-flip 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: texto-flip 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+  
+  @-webkit-keyframes texto-flip {
+    0% {
+      margin-top: -360px;
+    }
+    5% {
+      margin-top: -270px;
+    }
+    25% {
+      margin-top: -270px;
+    }
+    30% {
+      margin-top: -180px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    55% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  
+  @keyframes texto-flip {
+    0% {
+      margin-top: -360px;
+    }
+    5% {
+      margin-top: -270px;
+    }
+    25% {
+      margin-top: -270px;
+    }
+    30% {
+      margin-top: -180px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    55% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+
+/* Ventana Modal */
+.contenedor-modal {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 8%; 
+  display: none;
+  position: fixed;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+
+.contenedor-modal .contenido-modal {
+  width: 60%;
+  padding: 20px;
+  margin: auto;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #1B6282;
+}
+
+.contenedor-modal li{
+  padding-bottom: 1.25%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #5E5E5E;
+}
+
+.contenedor-modal .boton-cerrar {
+  float: right;
+  font-size: 200%;
+  font-weight: bold;
+  color: #1B6282;
+}
+
+.contenedor-modal .boton-cerrar:hover,
+.contenedor-modal .boton-cerrar:focus {
+  color: #E94E2A;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Media Query Breakpoints */
+
+/*Pantallas mayores a 1920px*/
+@media screen and (min-width: 1920px){
+  .contenedor-botones-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .boton-servicio-tecnologia{
+    height: 300px;
+  }
+
+  .boton-servicio-construccion{
+    height: 300px;
+  }
+
+  .boton-servicio-salud{
+    height: 300px;
+  }
+
+  .boton-servicio-otros{
+    height: 300px;
+  }
+}
+
+
+/* Pantallas menores a 1330px */
+@media screen and (max-width: 1330px){
+  .contenido-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenido-servicios span{
+    text-align: center;
+    padding-bottom: 2%;
+  }
+}
+
+/* Pantallas menores a 840px */
+@media screen and (max-width: 840px){
+  .contenido-servicios {
+    font-size: 150%;
+  }
+
+  .div-informacion{
+    font-size: 80%;
+  }
+}
+
+/* Pantallas menores a 640px */
+@media screen and (max-width: 640px){
+  .contenedor-servicios{
+    height: 950px;
+  }
+
+  .contenedor-botones-servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2%;
+  }
+
+  .contenido-servicios {
+    font-size: 150%;
+  }
+
+  .div-informacion{
+    font-size: 80%;
+  }
+
+  .boton-servicio-tecnologia{
+    height: 150px;
+  }
+
+  .boton-servicio-construccion{
+    height: 150px;
+  }
+
+  .boton-servicio-salud{
+    height: 150px;
+  }
+
+  .boton-servicio-otros{
+    height: 150px;
+  }
+}
+
+/* Pantallas menores a 380px */
+@media screen and (max-width: 380px){
+  .contenedor-servicios{
+    height: 950px;
+  }
+
+  .contenido-servicios {
+    font-size: 100%;
+  }
+
+  .div-informacion{
+    margin-top: -6%;
+    margin-bottom: 8%;
+  }
+
+  .lista-servicios{
+    padding-left: 5%;
+  }
+}
+
+/* Pantallas menores a 280px */
+@media screen and (max-width: 280px){
+  .contenedor-servicios{
+    height: 1000px;
+  }
+}
