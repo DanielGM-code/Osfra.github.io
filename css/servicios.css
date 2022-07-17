@@ -293,6 +293,19 @@
   .div-informacion{
     font-size: 80%;
   }
+
+  .contenedor-modal ul{
+    padding-left: 20px;
+  }
+
+  .contenedor-modal li{
+    font-size: 80%;
+    padding-bottom: 6%;
+  }
+
+  .contenedor-modal .boton-cerrar {
+    font-size: 120%;
+  }
 }
 
 /* Pantallas menores a 640px */

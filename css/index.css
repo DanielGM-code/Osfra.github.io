@@ -195,6 +195,13 @@ h4{
     }
 }
 
+/* Pantallas menores a 800px */
+@media screen and (max-width: 840px){
+    h2{
+        font-size: 120%;
+    }
+}
+
 /* Pantallas menores a 460px */
 @media screen and (max-width: 460px){
     h1{ 

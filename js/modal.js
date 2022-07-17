@@ -23,7 +23,7 @@ let listaConnstruccion = [
 
 // Lista de los servicios ofrecidos de salud
 let listaSalud = [
-    'Fabricación de instrumentos y aparatos ópticos de uso oftálmico.',
+    'Comercio de instrumentos y aparatos ópticos de uso oftálmico.',
     'Comercio al por mayor de mobiliario, equipo e instrumental médico y de laboratorio.',
     'Consultorios de optometría.',
     'Comercio al por menor de lentes.'

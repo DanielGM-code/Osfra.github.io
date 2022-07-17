@@ -1,7 +1,7 @@
 /* SECCIÓN DE ACERCA DE */
 .contenedor-acercade{
-    margin-top: -5%;
-    background-color: #F0F0F0;
+    height: 400px;
+    background-color: #E6E6E6;
 }
 
 /* TARJETAS */
@@ -28,8 +28,8 @@
     margin-left: 10%;
     margin-right: 10%;
     grid-template-columns: 1fr 1fr 1fr;
-    place-content: center;
-    margin-top: 4%;
+    justify-items: center;
+    margin-top: 5%;
 }
 
 .flip-card {
@@ -75,8 +75,6 @@
     font-size: 120%;
     color: #F0F0F0;
     background-image: linear-gradient(90deg, rgba(0,131,156,1) 30%, rgba(27,98,130,1) 100%);
-    box-shadow:  15px 15px 30px #dbdbdb,
-                -15px -15px 30px #f2f2f2;
 }
 
 /* Style the back side */
@@ -91,7 +89,63 @@
     font-size: 120%;
     color: #F0F0F0;
     background-color: #00839C;
-    box-shadow:  15px 15px 30px #dbdbdb,
-                -15px -15px 30px #f2f2f2;
     transform: rotateY(-180deg);
+}
+
+/* Pantallas mayores a 1700px */
+@media screen and (min-width: 1700px){
+    .contenedor-acercade{
+        height: 650px;
+    }
+
+    .flip-card {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Pantallas menores a 1200px */
+@media screen and (max-width: 1200px){
+    .flip-card {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Pantallas menores a 1000px */
+@media screen and (max-width: 1000px){
+    .contenedor-acercade{
+        height: 300px;
+    }
+
+    .flip-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flip-card-front {
+        font-size: 80%;
+    }
+
+    .flip-card-back {
+        font-size: 80%;
+    }
+}
+
+/* Pantallas menores a 840px */
+@media screen and (max-width: 840px){
+    .contenedor-acercade{
+        height: 750px;
+    }
+
+    .contenedor-acercade span{
+        font-size: 150%;
+    }
+
+    .contenedor-tarjetas{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 4%;
+        margin-top: 15%;
+    }
 }

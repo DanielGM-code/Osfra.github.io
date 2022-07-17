@@ -1,8 +1,10 @@
 /* SECCIÓN DE CONTACTO */
 .contenedor-contacto{
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #E6E6E6;
+    margin-top: -5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: #F0F0F0;
 }
 
 .contenedor-contacto span{
@@ -14,8 +16,18 @@
 
 .contenedor-contacto-contenido{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin-top: 5%;
+}
+
+#ubicacion-chica{
+    display: none;
+}
+
+#ubicacion-mini{
+    display: none;
 }
 
 .contenedor-formulario{
@@ -27,6 +39,7 @@
 
 .contenedor-formulario p{
     margin: 0;
+    width: 50%;
     padding-top: 5%;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -36,7 +49,7 @@
 }
 
 .contenedor-formulario input{
-    width: 400px;
+    width: 100%;
     height: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -48,7 +61,7 @@
 }
 
 .contenedor-formulario textarea{
-    width: 400px;
+    width: 100%;
     height: 200px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -82,7 +95,6 @@
 
 .contenedor-contacto-informacion{
     width: 100%;
-    margin-top: 80px;
     padding: 50px 10%;
     display: flex;
     justify-content: space-between;
@@ -127,4 +139,121 @@
 
 .boton-redes{
     cursor: pointer;
+}
+
+/* Pantallas menores a 1700px */
+@media screen and (min-width: 1700px){
+    .contenedor-formulario{
+        width: 750px;
+    }
+
+    .contenedor-formulario input{
+        width: 750px;
+    }
+
+    .contenedor-formulario textarea{
+        width: 750px;
+    }
+
+    .contenedor-formulario p{
+        width: 750px;
+    }
+
+}
+
+/* Pantallas menores a 1230px */
+@media screen and (max-width: 1230px){
+    .contenedor-formulario input{
+        width: 300px;
+    }
+    
+    .contenedor-formulario textarea{
+        width: 300px;
+    }
+
+    .contenedor-formulario p{
+        width: 300px;
+    }
+
+    #ubicacion-mediana{
+        display: none;
+    }
+
+    #ubicacion-chica{
+        display: block;
+    }
+
+    .contenedor-contacto-informacion{
+        flex-direction: column;
+    }
+
+    .contenedor-contacto-informacion div{
+        margin-bottom: 28px;
+    }
+
+    .horario-contenido-dias{
+        grid-template-columns: 150px 150px;
+    }
+}
+
+/* Pantallas menores a 840px */
+@media screen and (max-width: 840px){
+    .contenedor-contacto-contenido{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-formulario{
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .contenedor-contacto span{
+        font-size: 150%;
+    }
+}
+
+/* Pantallas menores a 380px */
+@media screen and (max-width: 380px){
+    .contenedor-contacto span{
+        font-size: 100%;
+    }
+
+    #ubicacion-mediana{
+        display: none;
+    }
+
+    #ubicacion-chica{
+        display: none;
+    }
+
+    #ubicacion-mini{
+        display: block;
+    }
+
+    .contenedor-formulario input{
+        width: 220px;
+    }
+    
+    .contenedor-formulario textarea{
+        width: 220px;
+    }
+
+    .contenedor-formulario p{
+        width: 220px;
+    }
+}
+
+/* Pantallas menores a 280px */
+@media screen and (max-width: 280px){
+    .redes-contenido-botones{
+        grid-template-columns: none;
+        grid-template-rows: 150px 150px;
+    }
+
+    .horario-contenido-dias{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
