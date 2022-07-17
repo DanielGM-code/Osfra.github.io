@@ -22,6 +22,7 @@
     margin-top: 5%;
 }
 
+/* Diferentes tamaños de mapas, sólo se muestra el más grande */
 #ubicacion-chica{
     display: none;
 }
@@ -87,12 +88,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.contenedor-formulario button:hover{
-    background-color: #1B6282;
-    color: #F0F0F0;
-    transition: all 0.3s ease-in-out;
-}
-
 .contenedor-contacto-informacion{
     width: 100%;
     padding: 50px 10%;
@@ -141,6 +136,7 @@
     cursor: pointer;
 }
 
+/* Media Query Breakpoints */
 /* Pantallas menores a 1700px */
 @media screen and (min-width: 1700px){
     .contenedor-formulario{

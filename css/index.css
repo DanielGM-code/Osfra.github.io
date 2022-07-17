@@ -178,16 +178,6 @@ h4{
 
 /* Media Query Breakpoints */
 
-/*Pantallas mayores a 1920px
-@media screen and (min-width: 1920px){
-}
-*/
-
-/* Pantallas menores a 1230px
-@media screen and (min-width: 1230px){
-}
-*/
-
 /* Pantallas menores a 950px */
 @media screen and (max-width: 950px){
     .sidebar{
@@ -236,40 +226,3 @@ h4{
         width: 35%;
     }
 }
-
-/* Pantallas menores a 460px 
-@media screen and (max-width: 460px){
-    .sidebar{
-        display: none;
-    }
-}*/
-
-/* Pantallas menores a 280px 
-@media screen and (max-width: 280px){
-    .contenedor-inicio{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .contenedor-eslogan{
-        align-items: center;
-        text-align: center;
-    }
-
-    .contenedor-eslogan img{
-        width: 90%;
-    }
-
-    .contenedor-eslogan h1{
-        font-size: 2em;
-        padding-left: 0px;
-    }
-
-    .contenedor-eslogan h2{
-        font-size: 0.8em;
-    }
-
-    .contenedor-animacion{
-        display: none;
-    }
-}*/
