@@ -125,8 +125,8 @@
 }
 /* TEXTO ANIMADO */
 .texto-flip {
-    -webkit-animation: texto-flip 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-            animation: texto-flip 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    -webkit-animation: texto-flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: texto-flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
   
   @-webkit-keyframes texto-flip {
