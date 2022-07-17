@@ -157,12 +157,22 @@ h4{
     background-attachment: fixed;
 }
 
+.divisor-ola-parallax img{
+    display: flex;
+    width: 100%;
+}
+
 .divisor-ola-bottom{
     display: flex;
     width: 100%;
     top: 0;
     background-size: cover;
     background-color: #E6E6E6;
+}
+
+.divisor-ola-bottom img{
+    display: flex;
+    width: 100%;
 }
 
 
