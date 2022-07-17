@@ -212,6 +212,27 @@
     .contenedor-contacto span{
         font-size: 150%;
     }
+
+    .contenedor-direccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .horario-contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes-contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Pantallas menores a 380px */
