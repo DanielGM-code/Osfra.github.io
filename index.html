@@ -184,25 +184,26 @@
         </div>
 
         <!-- En action estará la dirección a la que deseamos enviar los correos -->
-        <form class="contenedor-formulario" id="form" action="https://formsubmit.co/moralesDaniel6500@gmail.com" method="POST">
+        <form class="contenedor-formulario" id="form">
           <p>Correo electrónico:</p>
-          <input type="email" name="email" id="formularioCorreo" placeholder="Ejemplo: john@gmail.com">
+          <input type="email" name="email" id="formularioCorreo" placeholder="Ejemplo: john@gmail.com" required>
 
           <p>Nombre completo:</p>
-          <input type="text" name="Nombre" id="formularioNombre" placeholder="Ejemplo: John Martínez García"></input> 
+          <input type="text" name="name" id="formularioNombre" placeholder="Ejemplo: John Martínez García" required> 
 
           <p>Asunto:</p>
-          <input type="text" name="Asunto" id="formularioAsunto" placeholder="Ejemplo: Cotización de teclados"></input> 
+          <input type="text" name="subject" id="formularioAsunto" placeholder="Ejemplo: Cotización de teclados" required>
 
           <p>Mensaje:</p>
-          <textarea type="text" name="Mensaje" id="formularioMensaje" placeholder="¿En qué lo podemos ayudar?:"></textarea> 
+          <textarea type="text" name="message" id="formularioMensaje" placeholder="¿En qué lo podemos ayudar?:" required></textarea> 
 
-          <button disabled type="submit" id="botonEnviar">Enviar</button>
-
-          <!-- Redirecciona a la página principal despues de enviar el correo -->
-          <input type="hidden" name="_next" value="https://danielgm-code.github.io/Osfra.github.io/">
-          <input type="hidden" name="_autoresponse" value="En un momento tu correo será revisado por el equipo de Osfra. Te agradecemos la confianza">
+          <input disabled type="submit" id="botonEnviar" value="Enviar"></input>
         </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+          emailjs.init('H3NtmhpxHF-wv_2AY')
+        </script>
       </div>
     </div>
     <!-- Pié de página con toda la información de contacto -->
@@ -272,4 +273,6 @@
 <script src="js/modal.js"></script>
 <!-- index.js -->
 <script src="js/index.js"></script>
+<!-- formulario.js -->
+<script src="js/formulario.js"></script>
 </html>

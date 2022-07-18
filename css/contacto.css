@@ -73,7 +73,7 @@
     background-color: #F0F0F0;
 }
 
-.contenedor-formulario button{
+.contenedor-formulario > #botonEnviar{
     width: 80px;
     height: 30px;
     margin-top: 16px;
