@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/servicios.css">
-    <link rel="stylesheet" href="css/testimonios.css">
     <link rel="stylesheet" href="css/acercaDe.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="icon" href="img/icono.png">
@@ -186,21 +185,22 @@
         <!-- En action estará la dirección a la que deseamos enviar los correos -->
         <form class="contenedor-formulario" id="form">
           <p>Correo electrónico:</p>
-          <input type="email" name="email" id="formularioCorreo" placeholder="Ejemplo: john@gmail.com" required>
+          <input type="email" name="email" id="email" placeholder="Ejemplo: john@gmail.com" required>
 
           <p>Nombre completo:</p>
-          <input type="text" name="name" id="formularioNombre" placeholder="Ejemplo: John Martínez García" required> 
+          <input type="text" name="name" id="name" placeholder="Ejemplo: John Martínez García" required> 
 
           <p>Asunto:</p>
-          <input type="text" name="subject" id="formularioAsunto" placeholder="Ejemplo: Cotización de teclados" required>
+          <input type="text" name="subject" id="subject" placeholder="Ejemplo: Cotización de teclados" required>
 
           <p>Mensaje:</p>
-          <textarea type="text" name="message" id="formularioMensaje" placeholder="¿En qué lo podemos ayudar?:" required></textarea> 
+          <textarea type="text" name="message" id="message" placeholder="¿En qué lo podemos ayudar?:" required></textarea> 
 
-          <input disabled type="submit" id="botonEnviar" value="Enviar"></input>
+          <input type="submit" id="button" value="Enviar" >
         </form>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script type="text/javascript">
           emailjs.init('H3NtmhpxHF-wv_2AY')
         </script>
@@ -265,14 +265,32 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <!-- Animation Library -->
 <script src="js/srcrollreveal.js"></script>
-<!-- Slider animado -->
-<script src="js/slider.js"></script>
 <!-- Scroll progress animado -->
 <script src="js/scrollProgress.js"></script>
 <!-- Ventana Modal -->
 <script src="js/modal.js"></script>
 <!-- index.js -->
 <script src="js/index.js"></script>
-<!-- formulario.js -->
-<script src="js/formulario.js"></script>
+<!-- formulario -->
+<script>
+  const btn = document.getElementById('button');
+  document.getElementById('form')
+   .addEventListener('submit', function(event) {
+     event.preventDefault();
+  
+     btn.value = 'Enviando';
+  
+     const serviceID = 'default_service';
+     const templateID = 'template_dbhweqq';
+  
+     emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Enviado';
+        alert('Correo enviado correctamente!');
+      }, (err) => {
+        btn.value = 'Enviar';
+        alert(JSON.stringify(err));
+      });
+  });
+</script>
 </html>
